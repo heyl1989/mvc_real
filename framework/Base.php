@@ -58,7 +58,7 @@ class Base
      */
     private function registerAutoLoad()
     {
-        sql_autoload_register([$this, 'userAutoLoad']);
+        spl_autoload_register([$this, 'userAutoLoad']);
     }
 
     /**
