@@ -73,7 +73,7 @@ class Base
         define('PLATEFORM', $p);
 
         //当前控制器
-        $defController = $GLOBALS['config'][PLATEFORM]['default_platform'];
+        $defController = $GLOBALS['config'][PLATEFORM]['default_controller'];
         //mvc_real.io?p=home&c=student&a=info
         $c = isset($_GET['c']) ? $_GET['c'] : $defController;
         define('CONTROLLER', $c);
